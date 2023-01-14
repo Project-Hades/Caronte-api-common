@@ -46,4 +46,4 @@ jobs:
           poetry install
       - name: Source code analysis
         run: |
-          poetry run pylint ./tests ./caronte/common
+          poetry run pylint ./tests ./caronte_common
