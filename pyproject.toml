@@ -5,7 +5,7 @@ description = "Common components and modules to integrate Caronte layers"
 authors = ["Giovani Liskoski Zanini <giovanilzanini@hotmail.com>"]
 license = "GNU"
 readme = "README.md"
-packages = [{ include = "common" }]
+packages = [{ include = "caronte" }]
 
 [tool.poetry.dependencies]
 python = "^3.9"
