@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "caronte-api-common"
-version = "0.2.0"
+version = "1.0.0"
 description = "Common components and modules to integrate Caronte layers"
 authors = ["Giovani Liskoski Zanini <giovanilzanini@hotmail.com>"]
 license = "GNU"
