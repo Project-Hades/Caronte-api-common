@@ -1,12 +1,10 @@
-from dataclasses import dataclass
 from typing import List, Optional
 
-from caronte_common.data.claim import Claim
+from pydantic import UUID4, BaseModel
 
 
-@dataclass
-class Role:
+class Role(BaseModel):
     name: str
-    claims: List[Claim]
+    claims: List[UUID4]
     created_at: Optional[str] = None
     updated_at: Optional[str] = None

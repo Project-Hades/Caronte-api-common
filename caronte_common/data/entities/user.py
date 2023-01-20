@@ -1,12 +1,12 @@
-from dataclasses import dataclass
 from datetime import datetime
 from typing import Optional
 from uuid import UUID
 
+from pydantic import BaseModel, EmailStr
 
-@dataclass
-class User:
-    email: str
+
+class User(BaseModel):
+    email: EmailStr
     cellphone: str
     user_name: str
     full_name: str

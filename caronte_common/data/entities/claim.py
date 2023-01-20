@@ -1,10 +1,10 @@
-from dataclasses import dataclass
 from typing import Optional, Union
+from pydantic import UUID4, BaseModel
 
 
-@dataclass
-class Claim:
+class Claim(BaseModel):
     name: str
     value: Union[str, int, float]
+    external_id: Optional[UUID4] = None
     created_at: Optional[str] = None
     updated_at: Optional[str] = None
